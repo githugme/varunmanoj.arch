@@ -2,10 +2,15 @@
 
 /*tailwindcss */
     {
-    --clr-dark: #070a13;
+    /* --clr-dark: #070a13;
     --clr-light: #f1f5f9;
     --clr-slate400: #94a3b8;
     --clr-slate600: #475569;
+    --clr-slate800: #1e293b; */
+    --clr-light: #070a13;
+    --clr-dark: #f1f5f9;
+    --clr-slate400: #1e293b;
+    --clr-slate600: #1e293b;
     --clr-slate800: #1e293b;
     --clr-rose: #e11d48;
     --clr-indigo: #4f46e5;
@@ -51,7 +56,12 @@ html {
 }
 
 body {
-    font-family: "Kanit", sans-serif;
+    /* font-family: "Kanit", sans-serif; */
+    font-family: "Kanit", serif;
+  font-weight: 100;
+  font-style: normal;
+  /* font-style: italic; */
+
     /* font-share */
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -127,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 .cat2 img,
 .cat3 img {
     height: 50%;
-    border: 8px solid #94a3b8;
+    /* border: 8px solid #94a3b8; */
     max-height: 75%;
     max-width: 75%;
     justify-content: center;
@@ -163,7 +173,16 @@ body::-webkit-scrollbar-thumb {
 #image3 {
     max-width: 500px;
     max-height: 500px;
-    border: 2px solid #94a3b8;
+    /* border: 2px solid #94a3b8; */
+    
+}
+
+#image1:hover,
+#image2:hover,
+#image3:hover {
+    opacity: 0.7;
+    border: 7px solid #333333;
+    
 }
 
 .contacts {
@@ -179,7 +198,29 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
+
 .contacts img {
     height: 30px;
     width: 30px;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+/* .customFontStyle1 {
+    line-height: 30px; font-weight: 400; color: #333333; font-size: 20px; letter-spacing: 2px;
+
+} */
+
+.flexContainer h2 {
+    line-height: 30px; font-weight: 400; color: #333333; font-size: 20px; letter-spacing: 2px;
+}
+
+.customFontStyle2 {
+    font-weight: 400; color: #333333; font-size: 3.2rem; letter-spacing: normal;
+}
+
+.customFontStyle3 {
+    font-weight: 400; color: #333333; font-size: 18px; letter-spacing: normal;
 }

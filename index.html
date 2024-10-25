@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <link rel="icon" type="image/svg+xml" href="./models/icons/design.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- FONT SHARE -->
@@ -20,7 +21,15 @@
     rel="stylesheet">
 
 
-  <title>monzz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+
+  <title>VM</title>
 </head>
 
 <body>
@@ -34,7 +43,10 @@
           <a class="header__link" href="./category/category2.html">Films</a>
         </li>
         <li>
-          <a class="header__link" href="./category/category3.html">Architecture</a>
+          <a class="header__link" href="./category/category3.html">Models</a>
+        </li>
+        <li>
+          <a class="header__link" href="./category/category4.html">Drawings</a>
         </li>
         <li class="header__line"></li>
         <li>
@@ -69,7 +81,10 @@
           <a class="mobile-nav__link" href="./category/category2.html">Films</a>
         </li>
         <li>
-          <a class="mobile-nav__link" href="./category/category3.html">Architecture</a>
+          <a class="mobile-nav__link" href="./category/category3.html">Models</a>
+        </li>
+        <li>
+          <a class="header__link" href="./category/category4.html">Drawings</a>
         </li>
         <li class="mobile-nav__link-line"></li>
         <li>
@@ -91,44 +106,65 @@
   <!-- end of mobile navigation -->
   <main>
 
-    <section class="hero container">
+    <section class="hero container" style="color: rgb(51, 51, 51);">
 
-      <img class="hero__img" src="./models/pp.png" alt="Profile picture">
-      <h2 class="hero__subtitle">Varun here</h2>
-      <h1 class="hero__title">Lel brilliance</h1>
+      <img class="hero__img" src="./models/pp.jpg" alt="Profile picture">
+      <h2 class="hero__title" style="font-weight: 400; color: #333333; font-size: 3.2rem; letter-spacing: normal;">Varun Manoj</h2>
+      <h1 class="hero__subtitle" style="font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 5px;">ARCHITECT / PRODUCTION DESIGNER / ART DIRECTOR / 3D MODELER</h1>
+      <h1 class="hero__subtitle" style="font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 2px;">📍 Dubai, UAE</h1>
+      <h3 class="hero__subtitle" style="line-height: 30px; font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 2px;">A production designer with a background in architecture, <br>I specialize in creating visually compelling sets. Passionate about art! <br>Excited to keep exploring new ideas and <br>take on projects that push creativity further.
+        Let's create something amazing!</h3>
+      <!-- <h3 class="hero__subtitle" style="font-size: var(--size-2xl);"></h3> -->
       <p class="hero__description">
 
 
       </p>
-      <a class="hero__btn btn" href="mailto:varunmanojj@gmail.com" target="_blank">Reach out</a>
+      <!-- <a class="contact__btn btn" href="mailto:varunmanojj@gmail.com" target="_blank">Reach out</a> -->
 
     </section>
     <section>
       <div>
-        <h1 class="categText">My projects and work</h1>
+        <h1 class="categText" style="font-weight: 400; color: #333333; font-size: 2.2rem; letter-spacing: normal;">My projects and work</h1>
       </div>
-      <div class="flexContainer" style="text-align: center; font-size: 1.6rem;">
+      <div class="flexContainer" style="text-align: center; font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 2px;">
         <div class="item1">
           <img id="image1" src="./models/arts/1.jpg" onclick="window.location.href='category/category1.html'">
-          <h2>Arts</h2>
+          <h2 class="customFontStyle1">Arts</h2>
         </div>
         <div class="item2">
           <img id="image2" src="./models/films/set-3.jpg" onclick="window.location.href='category/category2.html'">
-          <h2>Films</h2>
+          <h2 class="customFontStyle1">Films</h2>
         </div>
         <div class="item3">
           <img id="image3" src="./models/architecture/4.jpg" onclick="window.location.href='category/category3.html'">
-          <h2>Category</h2>
+          <h2 class="customFontStyle1">Models</h2>
         </div>
       </div>
     </section>
 
+    <section>
+      <!-- <div>
+        <h1 class="categText">My projects and work</h1>
+      </div> -->
+      <div class="flexContainer" style="text-align: center; font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 2px;">
+        <div class="item1">
+          <img id="image1" src="./models/draws/draw1.png" onclick="window.location.href='category/category4.html'">
+          <h2>Drawings</h2>
+        </div>
+        <div class="item2">
+          <img id="image2" src="./models/draws/draw2.jpg" onclick="window.location.href='category/category4.html'">
+          <h2>Others</h2>
+        </div>
+        
+      </div>
+    </section>
+
     <section id="contact" class="contact container section">
-      <h2 class="contact__title">Contact me</h2>
-      <p class="contact__description">
-        my inbox is always open so feel free to reach out
+      <h2 class="contact__title" style="font-weight: 400; color: #333333; font-size: 2.2rem; letter-spacing: normal;">Contact me</h2>
+      <p class="contact__description" style="font-size: 23px;">
+        You can reach out to me anytime
       </p>
-      <a class="contact__btn btn" href="https://www.instagram.com/varun.manoj/" target="_blank">Reach Out</a>
+      <a class="contact__btn btn" style="background-color:var(--clr-light);" href="https://www.instagram.com/varun.manoj/" target="_blank">Reach Out</a>
     </section>
 
     <!-- <section class="contactSection"> -->

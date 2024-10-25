@@ -18,8 +18,8 @@ mobileNav();
 darkMode();
 lazyLoading();
 
-function openImg1(){
-    var image = document.getElementById('image1');
-    var source = image.src;
-    window.open(source);
-}
+// function openImg1(){
+//     var image = document.getElementById('image1');
+//     var source = image.src;
+//     window.open(source);
+// }
